@@ -43,6 +43,32 @@ const Disclaimer = () => {
             <div className="flex items-start mb-6">
               <Shield className="h-8 w-8 text-cyber-red mr-4 flex-shrink-0 mt-1" />
               <div>
+                <h3 className="text-xl font-display font-bold text-white mb-3">Intellectual Property Notice</h3>
+                <p className="text-gray-300 mb-4">
+                  We do not claim this tool to be affiliated with Indiana Jones or any of the copyrights associated with Indiana Jones, Lucasfilm Ltd., Disney, or any related franchises. All references to "Indiana" and the archeologist persona are used for thematic purposes only and constitute an AI simulation unaffiliated with the official Indiana Jones franchise.
+                </p>
+                <p className="text-gray-300">
+                  This is an AI simulation tool only. It is not endorsed by or affiliated with the creators, producers, or rights holders of the Indiana Jones intellectual property.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start mb-6">
+              <Shield className="h-8 w-8 text-cyber-red mr-4 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-display font-bold text-white mb-3">AI Accuracy Warning</h3>
+                <p className="text-gray-300 mb-4">
+                  This tool utilizes artificial intelligence which may produce incorrect, incomplete, or misleading information. Some answers might be wrong, and it is the user's sole responsibility to verify all information provided by this tool through reliable academic and scientific sources.
+                </p>
+                <p className="text-gray-300">
+                  AI may produce hallucinations, factual errors, or misinterpretations of historical data. Do not use this tool as the sole source for academic research, professional publications, or educational materials without thorough verification.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start mb-6">
+              <Shield className="h-8 w-8 text-cyber-red mr-4 flex-shrink-0 mt-1" />
+              <div>
                 <h3 className="text-xl font-display font-bold text-white mb-3">Historical Accuracy and Interpretations</h3>
                 <p className="text-gray-300 mb-4">
                   Indiana Archaeologist GPT may present alternative historical perspectives and interpretations that challenge conventional historical narratives. These interpretations are speculative and should not be taken as established historical fact. The tool encourages open-minded exploration but users should exercise critical thinking and consult academic sources for verified historical information.
