@@ -20,7 +20,7 @@ const Index = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const tagline = "Uncovering the hidden truths buried beneath the sands of time with AI—questioning history, decoding ancient texts, and revealing lost civilizations. No stone goes unturned, no mystery left unsolved. With deep analysis, cutting-edge research, and a thirst for adventure, we defy the norm and connect the dots of the past. Legends, relics, and ancient wisdom await—let's dive in. Just one rule… No snakes.";
+  const tagline = "Unveiling ancient mysteries with AI—questioning history, decoding texts, and discovering lost civilizations. Through cutting-edge research and adventure, we connect the dots of our past. Ready to explore? Just one rule… No snakes.";
 
   return (
     <div className="min-h-screen bg-cyber-black flex flex-col">
