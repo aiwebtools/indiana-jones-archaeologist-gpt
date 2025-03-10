@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -7,15 +6,23 @@ import FAQ from "@/components/FAQ";
 import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import DisclaimerPopup from "@/components/DisclaimerPopup";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
   const videoRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
+
+    // Check if the user has already accepted the disclaimer
+    const hasAcceptedDisclaimer = localStorage.getItem('disclaimerAccepted') === 'true';
+    if (!hasAcceptedDisclaimer) {
+      setShowDisclaimer(true);
+    }
 
     return () => clearTimeout(timer);
   }, []);
@@ -25,6 +32,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-cyber-black flex flex-col">
       <Navbar />
+      
+      {/* Disclaimer Popup */}
+      <DisclaimerPopup 
+        isOpen={showDisclaimer} 
+        onClose={() => setShowDisclaimer(false)} 
+      />
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
