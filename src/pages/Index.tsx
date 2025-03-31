@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -85,12 +86,12 @@ const Index = () => {
           
           <div className={`md:w-1/2 mt-16 md:mt-0 ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
             <div className="relative h-80 md:h-[450px] flex items-center justify-center">
-              {/* YouTube Video */}
+              {/* YouTube Video - Updated with new URL */}
               <div className="w-full h-full max-w-2xl overflow-hidden rounded-lg border-2 border-cyber-cyan/30 shadow-neon-cyan">
                 <iframe
                   ref={videoRef}
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/WYFRMC2Qjw0?si=ElF48N-cn_FPru3A&autoplay=1&mute=0&controls=1&showinfo=0&rel=0&modestbranding=1&hd=1"
+                  src="https://www.youtube.com/embed/uf2i_DdaJ7M?si=ElF48N-cn_FPru3A&autoplay=1&mute=0&controls=1&showinfo=0&rel=0&modestbranding=1&hd=1"
                   title="Indiana Archaeologist GPT"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
