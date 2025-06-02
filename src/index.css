@@ -36,6 +36,15 @@
   
   body {
     @apply bg-cyber-dark-blue text-white antialiased overflow-x-hidden;
+    background: linear-gradient(45deg, 
+      #0b0b10 0%, 
+      #0f111b 25%, 
+      #0e1428 50%, 
+      #0f111b 75%, 
+      #0b0b10 100%
+    );
+    background-size: 400% 400%;
+    animation: divine-gradient 15s ease infinite;
   }
 
   html {
@@ -53,66 +62,112 @@
   }
   
   .text-glow {
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3);
+    text-shadow: 
+      0 0 5px rgba(0, 212, 255, 0.8), 
+      0 0 10px rgba(0, 212, 255, 0.6),
+      0 0 15px rgba(0, 212, 255, 0.4),
+      0 0 20px rgba(0, 212, 255, 0.3),
+      0 0 35px rgba(0, 212, 255, 0.2);
   }
   
   .text-glow-pink {
-    text-shadow: 0 0 10px rgba(255, 0, 128, 0.5), 0 0 20px rgba(255, 0, 128, 0.3);
+    text-shadow: 
+      0 0 5px rgba(255, 0, 128, 0.8), 
+      0 0 10px rgba(255, 0, 128, 0.6),
+      0 0 15px rgba(255, 0, 128, 0.4),
+      0 0 20px rgba(255, 0, 128, 0.3),
+      0 0 35px rgba(255, 0, 128, 0.2);
   }
   
   .text-glow-amber {
-    text-shadow: 0 0 10px rgba(255, 158, 0, 0.5), 0 0 20px rgba(255, 158, 0, 0.3);
+    text-shadow: 
+      0 0 5px rgba(255, 158, 0, 0.8), 
+      0 0 10px rgba(255, 158, 0, 0.6),
+      0 0 15px rgba(255, 158, 0, 0.4),
+      0 0 20px rgba(255, 158, 0, 0.3),
+      0 0 35px rgba(255, 158, 0, 0.2);
   }
   
   .border-glow-cyan {
-    box-shadow: 0 0 5px theme('colors.cyber.cyan'), 0 0 15px theme('colors.cyber.cyan');
+    box-shadow: 
+      0 0 5px theme('colors.cyber.cyan'), 
+      0 0 15px theme('colors.cyber.cyan'),
+      0 0 25px theme('colors.cyber.cyan');
   }
   
   .border-glow-purple {
-    box-shadow: 0 0 5px theme('colors.cyber.purple'), 0 0 15px theme('colors.cyber.purple');
+    box-shadow: 
+      0 0 5px theme('colors.cyber.purple'), 
+      0 0 15px theme('colors.cyber.purple'),
+      0 0 25px theme('colors.cyber.purple');
   }
   
   .cyber-button {
-    @apply relative bg-transparent backdrop-blur-sm border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/10 
-      transition-all duration-300 font-display uppercase tracking-wider py-2 px-6
-      hover:shadow-neon-cyan hover:scale-105;
+    @apply relative bg-transparent backdrop-blur-sm border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/20 
+      transition-all duration-500 font-display uppercase tracking-wider py-2 px-6
+      hover:shadow-neon-cyan hover:scale-105 overflow-hidden;
+  }
+  
+  .cyber-button::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-cyber-cyan/20 to-transparent
+      translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-700;
   }
   
   .cyber-button-primary {
-    @apply relative bg-cyber-cyan/10 border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/20 
-      transition-all duration-300 font-display uppercase tracking-wider py-3 px-8
-      hover:shadow-neon-cyan hover:scale-105;
+    @apply relative bg-cyber-cyan/10 border-2 border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/30 
+      transition-all duration-500 font-display uppercase tracking-wider py-3 px-8
+      hover:shadow-neon-cyan hover:scale-105 overflow-hidden;
+  }
+  
+  .cyber-button-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-cyber-cyan/30 to-transparent
+      translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-700;
   }
   
   .cyber-button-secondary {
-    @apply relative bg-cyber-purple/10 border border-cyber-purple text-cyber-purple hover:bg-cyber-purple/20 
-      transition-all duration-300 font-display uppercase tracking-wider py-3 px-8
-      hover:shadow-neon-purple hover:scale-105;
+    @apply relative bg-cyber-purple/10 border-2 border-cyber-purple text-cyber-purple hover:bg-cyber-purple/30 
+      transition-all duration-500 font-display uppercase tracking-wider py-3 px-8
+      hover:shadow-neon-purple hover:scale-105 overflow-hidden;
+  }
+  
+  .cyber-button-secondary::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-cyber-purple/30 to-transparent
+      translate-x-[-100%] hover:translate-x-[100%] transition-transform duration-700;
   }
   
   .cyber-panel {
-    @apply bg-cyber-blue/70 backdrop-blur-md border border-white/10 rounded-lg p-6 relative overflow-hidden;
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+    @apply bg-cyber-blue/70 backdrop-blur-md border border-white/20 rounded-lg p-8 relative overflow-hidden;
+    box-shadow: 
+      0 10px 30px -5px rgba(0, 0, 0, 0.5),
+      0 0 20px rgba(0, 212, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   
   .cyber-panel::after {
     content: '';
     @apply absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyber-cyan to-transparent;
+    animation: divine-shimmer 3s ease-in-out infinite;
   }
   
   .cyber-panel::before {
     content: '';
     @apply absolute top-0 right-0 w-px h-full bg-gradient-to-b from-cyber-cyan via-transparent to-transparent;
+    animation: divine-shimmer 3s ease-in-out infinite reverse;
   }
   
   .glow-line-bottom::after {
     content: '';
     @apply absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyber-cyan to-transparent;
+    animation: divine-shimmer 4s ease-in-out infinite;
   }
   
   .glow-line-left::before {
     content: '';
     @apply absolute bottom-0 left-0 w-px h-full bg-gradient-to-t from-cyber-cyan via-transparent to-transparent;
+    animation: divine-shimmer 4s ease-in-out infinite reverse;
   }
 }
 
@@ -126,5 +181,63 @@
   .scrollbar-none {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Divine keyframe animations */
+@keyframes divine-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes divine-shimmer {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.1);
+  }
+}
+
+@keyframes divine-float-complex {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) translateX(5px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-20px) translateX(3px) rotate(0.5deg);
+  }
+}
+
+@keyframes divine-pulse-complex {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.03);
   }
 }
