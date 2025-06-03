@@ -32,6 +32,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-cyber-black flex flex-col">
+      {/* SEO-optimized hidden content for search engines */}
+      <div className="sr-only">
+        <h1>AI Web Tools - AIWEBTOOLS.AI - Advanced Artificial Intelligence Tools</h1>
+        <p>Discover the best AI tools for research, analysis, and discovery. AIWEBTOOLS.AI offers cutting-edge artificial intelligence web tools including Indiana Archaeologist GPT for archaeological research, historical analysis, and ancient text decoding.</p>
+        <p>Keywords: AI web tools, AI tools, artificial intelligence tools, research AI, archaeological AI, historical analysis AI, AIWEBTOOLS.AI</p>
+      </div>
+      
       <Navbar />
       
       {/* Disclaimer Popup */}
@@ -40,7 +47,7 @@ const Index = () => {
         onClose={() => setShowDisclaimer(false)} 
       />
       
-      {/* Hero Section */}
+      {/* Hero Section - SEO Optimized */}
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
         {/* Background elements */}
         <div className="absolute inset-0 bg-cyber-black z-[-2]"></div>
@@ -53,14 +60,16 @@ const Index = () => {
         <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between">
           <div className={`md:w-1/2 text-center md:text-left space-y-6 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <div className="inline-block py-1 px-3 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 mb-4">
-              <span className="text-cyber-cyan text-sm font-mono">Advanced Archaeology AI</span>
+              <span className="text-cyber-cyan text-sm font-mono">Advanced AI Web Tools by AIWEBTOOLS.AI</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
-              <span className="text-white">Indiana</span>{' '}
-              <span className="text-cyber-cyan text-glow">Archaeologist</span>{' '}
-              <span className="text-cyber-amber text-glow-amber">GPT</span>
-            </h1>
+            <header>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight">
+                <span className="text-white">Indiana</span>{' '}
+                <span className="text-cyber-cyan text-glow">Archaeologist</span>{' '}
+                <span className="text-cyber-amber text-glow-amber">GPT</span>
+              </h1>
+            </header>
             
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
               {tagline}
@@ -72,12 +81,14 @@ const Index = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cyber-button-primary font-bold text-lg"
+                aria-label="Start your AI research expedition with Indiana Archaeologist GPT"
               >
                 Start Your Expedition
               </a>
               <a 
                 href="#features"
                 className="cyber-button-secondary font-bold text-lg"
+                aria-label="Discover AI tool capabilities and features"
               >
                 Discover Capabilities
               </a>
@@ -92,7 +103,7 @@ const Index = () => {
                   ref={videoRef}
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/uf2i_DdaJ7M?si=ElF48N-cn_FPru3A&autoplay=1&mute=0&controls=1&showinfo=0&rel=0&modestbranding=1&hd=1"
-                  title="Indiana Archaeologist GPT"
+                  title="Indiana Archaeologist GPT - AI Web Tools Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -111,8 +122,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call To Action Section */}
-      <section className="relative py-24 overflow-hidden bg-cyber-black">
+      {/* Call To Action Section - SEO Enhanced */}
+      <section className="relative py-24 overflow-hidden bg-cyber-black" aria-labelledby="cta-heading">
         {/* Glow effects */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl max-h-96 bg-cyber-purple/10 rounded-full blur-[120px] z-0"></div>
         
@@ -123,7 +134,7 @@ const Index = () => {
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyber-cyan/20 blur-xl"></div>
               
               <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+                <h2 id="cta-heading" className="text-3xl md:text-4xl font-display font-bold mb-6">
                   <span className="text-cyber-amber text-glow-amber">Begin Your</span>{' '}
                   <span className="text-white">Expedition Today</span>
                 </h2>
@@ -139,6 +150,7 @@ const Index = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cyber-button-primary text-lg group"
+                  aria-label="Start exploring with AI web tools"
                 >
                   <span className="flex items-center">
                     Start Exploring 
@@ -151,6 +163,7 @@ const Index = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-white hover:text-cyber-cyan transition-colors"
+                  aria-label="Discover more AI web tools at AIWEBTOOLS.AI"
                 >
                   <Globe className="h-5 w-5" />
                   <span>Discover More AI Tools</span>
