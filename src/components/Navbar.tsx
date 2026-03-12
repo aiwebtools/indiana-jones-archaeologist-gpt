@@ -42,7 +42,7 @@ const Navbar = () => {
             <Compass className="h-8 w-8 text-cyber-cyan animate-pulse-neon" strokeWidth={1.5} />
             <div>
               <span className="block text-white text-glow">Indiana Archaeologist <span className="text-cyber-cyan">GPT</span></span>
-              <span className="text-xs font-sans tracking-wide text-cyber-cyan/80">Presented by <a href="http://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a></span>
+              <span className="text-xs font-sans tracking-wide text-cyber-cyan/80">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a></span>
             </div>
           </Link>
         </div>
