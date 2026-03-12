@@ -60,7 +60,7 @@ const Navbar = () => {
           <a href="#faq" className="text-white hover:text-cyber-cyan transition-colors">FAQ</a>
           <a href="#disclaimer" className="text-white hover:text-cyber-cyan transition-colors">Disclaimer</a>
           <a 
-            href="http://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white hover:text-cyber-cyan transition-colors"
