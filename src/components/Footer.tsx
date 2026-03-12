@@ -160,8 +160,8 @@ const Footer = () => {
               
               <div className="mt-8">
                 <a 
-                  href="http://www.aiwebtools.ai" 
-                  target="_blank" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block py-2 px-4 bg-cyber-amber/10 text-cyber-amber border border-cyber-amber rounded-full hover:bg-cyber-amber/20 transition-all duration-300 hover:shadow-neon-amber"
                 >
