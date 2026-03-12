@@ -27,7 +27,7 @@ const Footer = () => {
                     Indiana Archaeologist <span className="text-cyber-cyan">GPT</span>
                   </div>
                   <div className="text-xs text-cyber-cyan/80">
-                    Presented by <a href="http://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a>
+                    Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a 
-                    href="http://www.aiwebtools.ai" 
+                    href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-cyber-cyan transition-all duration-300 flex items-center group"
@@ -160,8 +160,8 @@ const Footer = () => {
               
               <div className="mt-8">
                 <a 
-                  href="http://www.aiwebtools.ai" 
-                  target="_blank" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block py-2 px-4 bg-cyber-amber/10 text-cyber-amber border border-cyber-amber rounded-full hover:bg-cyber-amber/20 transition-all duration-300 hover:shadow-neon-amber"
                 >
@@ -176,8 +176,8 @@ const Footer = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyber-cyan/10 to-transparent animate-pulse-neon"></div>
           <div className="text-gray-400 text-sm mb-4 md:mb-0 relative z-10">
             <a 
-              href="http://www.aiwebtools.ai" 
-              target="_blank" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyber-cyan transition-colors"
             >
