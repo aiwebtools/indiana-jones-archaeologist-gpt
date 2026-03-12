@@ -27,7 +27,7 @@ const Footer = () => {
                     Indiana Archaeologist <span className="text-cyber-cyan">GPT</span>
                   </div>
                   <div className="text-xs text-cyber-cyan/80">
-                    Presented by <a href="http://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a>
+                    Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">AiWebTools.Ai</a>
                   </div>
                 </div>
               </div>
