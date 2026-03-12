@@ -42,7 +42,7 @@ const CTA = () => {
               </a>
               
               <a 
-                href="http://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:text-cyber-cyan transition-colors"

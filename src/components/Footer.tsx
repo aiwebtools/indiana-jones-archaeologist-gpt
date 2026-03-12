@@ -176,8 +176,8 @@ const Footer = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyber-cyan/10 to-transparent animate-pulse-neon"></div>
           <div className="text-gray-400 text-sm mb-4 md:mb-0 relative z-10">
             <a 
-              href="http://www.aiwebtools.ai" 
-              target="_blank" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
+              target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyber-cyan transition-colors"
             >
